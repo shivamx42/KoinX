@@ -3,7 +3,7 @@ import React from 'react'
 export default function GettingStarted() {
   return (
     <>
-        <div className='flex flex-col p-1 m-8  bg-blue-700 text-white text-xs rounded-xl text-center w-3/12 h-4/5'>
+        <div className='flex flex-col p-1 m-8  bg-blue-700 text-white text-xs rounded-xl text-center w-3/4 h-4/5'>
             <h4 className='font-bold items-center mx-auto mt-6'>Get Started with KoinX <br/>
                 <span>for FREE</span>
             </h4>

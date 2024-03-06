@@ -35,7 +35,7 @@ export default function Crypto() {
 
         <div className='flex gap-2 ml-3'>
           <span className='font-bold'>${usd.toLocaleString("en-US")}</span>
-          <span className={`text-sm p-1 ${usd_24h_change < 0 ? 'bg-red-500' : 'bg-green-200'}`}>
+          <span className={`text-sm p-1 ${usd_24h_change < 0 ? 'bg-red-100 text-red-500' : 'bg-green-100 text-green-500'}`}>
             {percent.toString().substring(0,6)}%
           </span>
 
