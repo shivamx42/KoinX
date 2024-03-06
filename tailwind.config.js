@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        "nav-bg": "#FFEFF",
         "button-bg": "#1B4AEF",
+        "symbol-bg": "#5C677B"
       },
 
     },

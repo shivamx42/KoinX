@@ -2,7 +2,7 @@ import NavLinks from "./NavLinks";
 import { useState } from "react"
 import { Menu,X } from "lucide-react"
 
-export default function Header() {
+export default function NavBar() {
 
   const [menuOpen,setMenuOpen]=useState(false);
 
@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <>
-        <div className='bg-nav-bg m-3 flex justify-between items-center flex-wrap' >
+        <div className='bg-white flex justify-between items-center flex-wrap' >
             <img src='/images/logo.png'></img>
 
             <div className='hidden md:flex gap-3 pr-10 items-center font-semibold'>
