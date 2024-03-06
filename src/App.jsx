@@ -2,6 +2,7 @@ import NavBar from "./Components/NavBar"
 import Crypto from "./Components/Crypto"
 import GettingStarted from "./Components/GettingStarted"
 import Trending from "./Components/Trending"
+import Services from "./Components/Services"
 
 function App() {
 
@@ -17,13 +18,20 @@ function App() {
         </div>
         
         <div className="md:flex">
-          <Crypto/>
 
-          <div className="flex flex-col">
+          <div className="sm:w-full w-3/4">
+            <Crypto/>
+            <Services/>
+          </div>
+          
+
+          <div className="sm:w-full w-1/4">
             <GettingStarted/> 
             <Trending/>
           </div>
         </div>
+
+        
         
       </div>
          

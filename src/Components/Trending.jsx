@@ -24,7 +24,7 @@ export default function Trending() {
 
   return (
     <>
-      <div className='bg-white p-4 m-8 w-3/4 font-semibold rounded-lg'>
+      <div className='bg-white p-4 m-4 w-3/4 font-semibold rounded-lg'>
         <span className='text-sm font-semibold'>Trending Coins(24h)</span>
         {apiData && apiData.map((coin, index) => (
           <div key={index} className="flex items-center justify-between mt-2">

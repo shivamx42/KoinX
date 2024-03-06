@@ -22,12 +22,12 @@ export default function Crypto() {
   }
 
   const { usd, inr, usd_24h_change } = bitcoin;
-  const percent = (Math.abs(usd_24h_change) / usd)*100;
+  const percent = usd_24h_change;
 
   return (
 
     <>
-      <div className=' bg-white rounded-lg m-8 mt-2 w-full h-full md:w-3/4'>
+      <div className=' bg-white rounded-lg m-4 ml-8 w-90p p-4'>
  
         <div className='flex items-center gap-2 mb-3 ml-3'>
           <img src="images/btc.png" alt="" /> <span className='font-bold'>Bitcoin</span>  <span className='text-symbol-bg'>BTC</span>
@@ -36,7 +36,7 @@ export default function Crypto() {
         <div className='flex gap-2 ml-3'>
           <span className='font-bold'>${usd.toLocaleString("en-US")}</span>
           <span className={`text-sm p-1 ${usd_24h_change < 0 ? 'bg-red-100 text-red-500' : 'bg-green-100 text-green-500'}`}>
-            {percent.toString().substring(0,6)}%
+            {percent.toString().substring(0,4)}%
           </span>
 
           <span className='text-gray-400 text-xs'>(24H)</span>
