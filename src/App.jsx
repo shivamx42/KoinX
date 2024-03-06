@@ -1,5 +1,6 @@
 import NavBar from "./Components/NavBar"
 import Crypto from "./Components/Crypto"
+import GettingStarted from "./Components/GettingStarted"
 
 function App() {
 
@@ -14,7 +15,11 @@ function App() {
           <span className="text-gray-500" >Cryptocurrencies &gt;&gt; </span> <span className="font-semibold">Bitcoin</span>
         </div>
         
-        <Crypto/> 
+        <div className="md:flex">
+          <Crypto/>
+          <GettingStarted/> 
+        </div>
+        
       </div>
          
         
