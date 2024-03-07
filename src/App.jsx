@@ -8,7 +8,6 @@ import Sentiment from "./Components/Sentiment"
 import About from "./Components/About"
 import Tokenomics from "./Tokenomics"
 import Team from "./Components/Team"
-import TrendingCoin from "./Components/TrendingCoin"
 import TrendingFooter from "./Components/TrendingFooter"
 
 function App() {
@@ -17,39 +16,42 @@ function App() {
 
   return (
     <>
-      <div className="bg-gray-100">
-        <NavBar/>
+        <div className="bg-gray-100">
+          <NavBar/>
 
-        <div className="mt-4 ml-8 text-sm">
-          <span className="text-gray-500" >Cryptocurrencies &gt;&gt; </span> <span className="font-semibold">Bitcoin</span>
-        </div>
-        
-        <div className="md:flex">
-
-          <div className="sm:w-full">
-            <Crypto/>
-            <Services/>
-            <Performance/>
-            <Sentiment/>
-            <About/>
-            <Tokenomics/>
-            <Team/>
+          <div className="mt-4 ml-8 text-sm">
+            <span className="text-gray-500" >Cryptocurrencies &gt;&gt; </span> <span className="font-semibold">Bitcoin</span>
           </div>
           
+          <div className="md:flex">
 
-          <div className="md:w-auto">
-            <GettingStarted/> 
-            <Trending/>
+            <div className="sm:w-full">
+              <Crypto/>
+              <Services/>
+              <Performance/>
+              <Sentiment/>
+              <About/>
+              <Tokenomics/>
+              <Team/>
+            </div>
+            
+
+            <div className="md:w-auto mt-6">
+              <GettingStarted/> 
+              <Trending/>
+            </div>
           </div>
+
+          
+          
         </div>
 
-        
-        
-      </div>
+        <div className="bg-white w-full">
+          <TrendingFooter/>
+        </div>
 
-      <div className="bg-white w-full h-96">
-        <TrendingFooter/>
-      </div>
+
+
          
         
     </>

@@ -11,9 +11,23 @@ export default function TrendingFooter() {
     };
 
     return (
-        <div className='flex'>
-            {renderTrendingCoins()}
-        </div>
+
+        <>
+
+            <p className='m-10 mb-0 font-bold'>You May Also Like</p>
+
+            <div className='flex overflow-y-scroll no-scrollbar'>
+                {renderTrendingCoins()}
+            </div>
+
+            <p className='m-10 mb-0 font-bold'>Trending Coins</p>
+
+            <div className='flex overflow-y-scroll no-scrollbar mb-10'>
+                {renderTrendingCoins()}
+            </div>
+        </>
+
+        
     );
 };
 
