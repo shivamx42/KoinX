@@ -1,24 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import TrendingAPI from '../API Data/TrendingAPI';
 
 export default function Trending() {
-  const [apiData, setApiData] = useState(null);
 
-  useEffect(() => {
-    fetch(`https://api.coingecko.com/api/v3/search/trending?x_cg_demo_api_key=CG-TWzfh2AUSuKqfPoVoiZXyifV`)
-      .then((res) => res.json())
-      .then((data) => {
-        const trendingCoins = data.coins.slice(0, 3).map((coin) => ({
-          name: coin.item.name,
-          thumb: coin.item.thumb,
-          priceChangePercentage: coin.item.data.price_change_percentage_24h.usd,
-        }));
-        setApiData(trendingCoins);
-      })
-      .catch((error) => console.error('Error fetching data:', error));
-  }, []);
-
-
-  if (!apiData) {
+  const data=TrendingAPI();
+  
+  if (!data) {
     return <div>Some error occured</div>;
   }
 
@@ -26,7 +13,7 @@ export default function Trending() {
     <>
       <div className='bg-white p-4 m-4 font-semibold rounded-lg w-90P md:w-3/4'>
         <span className='text-lg font-semibold'>Trending Coins(24h)</span>
-        {apiData && apiData.map((coin, index) => (
+        {data && data.slice(0,3).map((coin, index) => (
           <div key={index} className="flex items-center justify-between mt-2">
             <div className="flex items-center flex-wrap">
               <img src={coin.thumb} alt={coin.name} className="w-8 h-8 mr-2" />

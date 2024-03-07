@@ -8,6 +8,8 @@ import Sentiment from "./Components/Sentiment"
 import About from "./Components/About"
 import Tokenomics from "./Tokenomics"
 import Team from "./Components/Team"
+import TrendingCoin from "./Components/TrendingCoin"
+import TrendingFooter from "./Components/TrendingFooter"
 
 function App() {
 
@@ -43,6 +45,10 @@ function App() {
 
         
         
+      </div>
+
+      <div className="bg-white w-full h-96">
+        <TrendingFooter/>
       </div>
          
         
