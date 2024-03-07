@@ -4,6 +4,7 @@ import GettingStarted from "./Components/GettingStarted"
 import Trending from "./Components/Trending"
 import Services from "./Components/Services"
 import Performance from "./Components/Performance"
+import Sentiment from "./Components/Sentiment"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Crypto/>
             <Services/>
             <Performance/>
+            <Sentiment/>
           </div>
           
 

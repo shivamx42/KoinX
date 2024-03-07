@@ -27,7 +27,7 @@ export default function Crypto() {
   return (
 
     <>
-      <div className=' bg-white rounded-lg m-4 w-90p p-4'>
+      <div className=' bg-white rounded-lg m-10 w-90p p-4'>
  
         <div className='flex items-center gap-2 mb-3 ml-3'>
           <img src="images/btc.png" alt="" /> <span className='font-bold'>Bitcoin</span>  <span className='text-symbol-bg'>BTC</span>

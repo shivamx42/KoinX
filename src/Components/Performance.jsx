@@ -36,7 +36,7 @@ export default function Performance() {
                 </div>
             </div>
 
-            <span className='text-lg text-gray-700 '>Fundamentals</span>
+            <span className='text-lg text-gray-700 '>Fundamentals &#9432;</span>
 
             <div className='md:flex justify-between'>
                 <div className='text-sm'>
