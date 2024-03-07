@@ -1,4 +1,5 @@
 import React from 'react'
+import SentimentProps from './SentimentProps'
 
 export default function Sentiment() {
   return (
@@ -9,27 +10,21 @@ export default function Sentiment() {
 
             <div className='md:flex gap-4'> 
 
-                <div className='flex bg-blue-100 rounded-lg my-3'>
+            
 
-                    <img src="/images/sentiment1.png" alt="" className='w-1/3 h-1/4 p-2'  />
+                <SentimentProps 
+                    src="/images/sentiment1.png" textProp1="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quia?" textProp2="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quia?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis praesentium quidem quasi voluptatem sit a repellendus quaerat. Obcaecati quibusdam voluptatum quas repellendus dignissimos veniam, doloremque rerum earum atque delectus asperiores?" color="bg-blue-100"
 
-                    <div className=' rounded-lg p-3 mb-4'>
-                        <h1 className='font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quia?</h1>
-                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis praesentium quidem quasi voluptatem sit a repellendus quaerat. Obcaecati quibusdam voluptatum quas repellendus dignissimos veniam, doloremque rerum earum atque delectus asperiores?</h2>
-                    </div>
-                </div>
+                />
 
-                <div className='flex bg-green-100 rounded-lg my-3'>
+            
+            
+                <SentimentProps 
+                    src="/images/sentiment2.png" textProp1="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quia?" textProp2="Lorem ipsum dolor sit amet      consectetur adipisicing elit. Debitis, quia?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis praesentium quidem quasi voluptatem sit a repellendus quaerat. Obcaecati quibusdam voluptatum quas repellendus dignissimos veniam, doloremque rerum earum atque delectus asperiores?" color="bg-green-100"
 
-                <img src="/images/sentiment2.png" alt=""  className='w-1/3 h-1/4 p-2'/>
-
-
-                    <div className='p-3 mb-4 '>
-                        <h1 className='font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quia?</h1>
-                        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis praesentium quidem quasi voluptatem sit a repellendus quaerat. Obcaecati quibusdam voluptatum quas repellendus dignissimos veniam, doloremque rerum earum atque delectus asperiores?</h2>
-                    </div>
-                </div>
-                
+                />
 
             </div>
 

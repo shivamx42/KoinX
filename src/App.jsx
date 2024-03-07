@@ -5,6 +5,7 @@ import Trending from "./Components/Trending"
 import Services from "./Components/Services"
 import Performance from "./Components/Performance"
 import Sentiment from "./Components/Sentiment"
+import About from "./Components/About"
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <Services/>
             <Performance/>
             <Sentiment/>
+            <About/>
           </div>
           
 

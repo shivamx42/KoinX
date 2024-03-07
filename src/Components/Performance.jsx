@@ -39,9 +39,9 @@ export default function Performance() {
             <span className='text-lg text-gray-700 '>Fundamentals &#9432;</span>
 
             <div className='md:flex justify-between'>
-                <div className='text-sm'>
+                <div className='text-sm '>
                     <div className='flex justify-between my-2'>
-                        <span className='text-gray-400'>Bitcoin Price</span>
+                        <span className='text-gray-400 mr-3'>Bitcoin Price</span>
                         <span>$16,815.46</span>
                     </div>
                     <hr className='border-gray-300 border-t-1 ' />
@@ -75,7 +75,7 @@ export default function Performance() {
                 
                 <div className='text-sm'>
                     <div className='flex justify-between my-2'>
-                        <span className='text-gray-400'>Bitcoin Price</span>
+                        <span className='text-gray-400 mr-3'>Bitcoin Price</span>
                         <span>$16,815.46</span>
                     </div>
                     <hr className='border-gray-300 border-t-1 ' />
