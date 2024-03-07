@@ -6,6 +6,7 @@ import Services from "./Components/Services"
 import Performance from "./Components/Performance"
 import Sentiment from "./Components/Sentiment"
 import About from "./Components/About"
+import Tokenomics from "./Tokenomics"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Performance/>
             <Sentiment/>
             <About/>
+            <Tokenomics/>
           </div>
           
 
