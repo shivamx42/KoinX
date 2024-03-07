@@ -24,11 +24,11 @@ export default function Trending() {
 
   return (
     <>
-      <div className='bg-white p-4 m-4 w-3/4 font-semibold rounded-lg'>
-        <span className='text-sm font-semibold'>Trending Coins(24h)</span>
+      <div className='bg-white p-4 m-4 font-semibold rounded-lg w-90P md:w-3/4'>
+        <span className='text-lg font-semibold'>Trending Coins(24h)</span>
         {apiData && apiData.map((coin, index) => (
           <div key={index} className="flex items-center justify-between mt-2">
-            <div className="flex items-center">
+            <div className="flex items-center flex-wrap">
               <img src={coin.thumb} alt={coin.name} className="w-8 h-8 mr-2" />
               <span className="text-sm">{coin.name}</span>
             </div>

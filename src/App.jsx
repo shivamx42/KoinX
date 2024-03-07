@@ -3,6 +3,7 @@ import Crypto from "./Components/Crypto"
 import GettingStarted from "./Components/GettingStarted"
 import Trending from "./Components/Trending"
 import Services from "./Components/Services"
+import Performance from "./Components/Performance"
 
 function App() {
 
@@ -19,13 +20,14 @@ function App() {
         
         <div className="md:flex">
 
-          <div className="sm:w-full w-3/4">
+          <div className="sm:w-full">
             <Crypto/>
             <Services/>
+            <Performance/>
           </div>
           
 
-          <div className="sm:w-full w-1/4">
+          <div className="md:w-auto">
             <GettingStarted/> 
             <Trending/>
           </div>
