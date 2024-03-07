@@ -7,6 +7,7 @@ import Performance from "./Components/Performance"
 import Sentiment from "./Components/Sentiment"
 import About from "./Components/About"
 import Tokenomics from "./Tokenomics"
+import Team from "./Components/Team"
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
             <Sentiment/>
             <About/>
             <Tokenomics/>
+            <Team/>
           </div>
           
 
